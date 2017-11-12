@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AppRegistry, TextInput, View, Text,StyleSheet } from 'react-native';
+import { AppRegistry, TextInput, View, Text,StyleSheet, TouchableOpacity } from 'react-native';
+
 export default class password extends Component {
 	constructor(props) {
 		super(props);
@@ -11,22 +12,32 @@ export default class password extends Component {
 			<View style={{alignItems: 'center',paddingTop:100}}>
 				<TextInput
 					style={styles.pass}
-					placeholder = "password"
-					placeholderTextColor = {"white"}
-					onChangeText = {(text) => this.setState({text})}
-				/>
-				<Text style={{padding: 10, fontsize:42}}>
-					{this.state.text}
-				</Text>
-				<TextInput
-					style={styles.user}
 					placeholder = "username"
 					placeholderTextColor = {"white"}
 					onChangeText = {(text) => this.setState({text})}
 				/>
-				<Text style={{padding: 10, fontsize:42}}>
+				<Text style={{padding: 10, fontSize:42, textAlign: 'center'}}>
 					{this.state.text}
 				</Text>
+				<TextInput
+					style={styles.user}
+					placeholder = "password"
+					placeholderTextColor = {"white"}
+					onChangeText = {(text) => this.setState({text})}
+				/>
+				<Text style={{padding: 10, fontSize:42, textAlign: 'center'}}>
+					{this.state.text}
+				</Text>
+				<TouchableOpacity>
+				  <View style={styles.button}>
+				    <Text style={styles.buttonText}>Sign In</Text>
+				  </View>
+			    </TouchableOpacity>
+			    <TouchableOpacity>
+			     <View style={styles.button}>
+				  <Text style={styles.buttonText}>Guest</Text>
+				 </View>
+				</TouchableOpacity>
 			</View>
 	
 		
@@ -39,8 +50,9 @@ const styles = StyleSheet.create( {
 		color: 'white',
 		width:100,
 		height: 40,
-		backgroundColor: 'maroon',
-		paddingTop: -50,	
+		backgroundColor: '#500000',
+		paddingTop: -50,
+		textAlign: 'center',
 	},
 
 	pass: {
@@ -48,6 +60,29 @@ const styles = StyleSheet.create( {
 		width: 100,
 		height: 40,
 		color: 'white',
-		backgroundColor: 'maroon',
+		backgroundColor: '#500000',
+		textAlign: 'center',
 	},
+	signin: {
+		paddingTop: 225,
+		alignItems: 'center'
+    //comment
+	},
+	guest: {
+		paddingTop: 150,
+		alignItems: 'center'
+	},
+	button: {
+		marginBottom: 10,
+		width: 75,
+		borderRadius: 50,
+		height: 25,
+		alignItems: 'center',
+		backgroundColor: 'maroon'
+	},
+	buttonText: {
+		padding: 5,
+		fontSize: 10,
+		color: 'white'
+	}
 });

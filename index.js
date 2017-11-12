@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import password from './password';
 
-AppRegistry.registerComponent('StemProject', () => App);
+AppRegistry.registerComponent('StemProject', () => password);
