@@ -28,16 +28,19 @@ export default class password extends Component {
 				<Text style={{padding: 10, fontSize:42, textAlign: 'center'}}>
 					{this.state.text}
 				</Text>
+				//Create two buttons (Sign in and Guest)
+				//No pressOn handlers yet, will need to add handlers to route sign in to main app 
+				//After validating sign in info and guest button to website
 				<TouchableOpacity>
 				  <View style={styles.button}>
 				    <Text style={styles.buttonText}>Sign In</Text>
 				  </View>
-			    </TouchableOpacity>
-			    <TouchableOpacity>
-			     <View style={styles.button}>
-				  <Text style={styles.buttonText}>Guest</Text>
-				 </View>
-				</TouchableOpacity>
+			      </TouchableOpacity>
+			      <TouchableOpacity>
+			          <View style={styles.button}>
+				    <Text style={styles.buttonText}>Guest</Text>
+				  </View>
+			      </TouchableOpacity>
 			</View>
 	
 		
