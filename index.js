@@ -16,7 +16,7 @@ import {
    TabNavigator,
    DrawerNavigator
  } from 'react-navigation';//imports the components from the file
-import RootNavigator from './src/Menu';
+import RootNavigator from './src/navigation/Menu';
 
 //index class to actually launch to app
 const MyApp = StackNavigator({
