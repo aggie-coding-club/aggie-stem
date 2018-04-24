@@ -13,6 +13,7 @@ import {
   DrawerNavigator
 } from 'react-navigation';
 import StaticBar from './StaticBar';
+import Buttons from './Buttons';
 
 var {height, width}=Dimensions.get("window");
 
@@ -20,6 +21,7 @@ const ThingsToDo = () => (
   <ScrollView>
     <View style={styles.container}>
       <StaticBar/>
+      <Buttons/>
 
       <View style={styles.titleContainer}>
         <Text style={styles.titleWords}>Local Activies</Text>

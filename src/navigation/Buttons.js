@@ -22,7 +22,7 @@ import StaticBar from './StaticBar';
 var {height, width} = Dimensions.get('window');
 
 const Buttons = ({ navigation }) => (
-  <View>
+  <View style={styles.container}>
     <TouchableHighlight
       style={styles.logout}
       onPress={() => {
@@ -77,12 +77,14 @@ const Buttons = ({ navigation }) => (
 );
 // Styles
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+  },
   logout: {
-    position:'relative',
     height: 50,
     width: 50,
-    flexDirection: 'row',
-    alignSelf: 'flex-end',
+    alignSelf: 'flex-start',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#003C71',
@@ -91,10 +93,8 @@ const styles = StyleSheet.create({
     borderColor: '#000000'
   },
   calendar: {
-    position: 'absolute',
     height: 50,
-    width: 70,
-    flexDirection: 'row',
+    width: 60,
     alignSelf: 'flex-start',
     alignItems: 'center',
     justifyContent: 'center',
@@ -104,10 +104,8 @@ const styles = StyleSheet.create({
     borderColor: '#000000'
   },
   ThingsToDo: {
-    position:'relative',
     height: 50,
-    width: 100,
-    flexDirection: 'row',
+    width: 70,
     alignSelf: 'flex-start',
     alignItems: 'center',
     justifyContent: 'center',
