@@ -17,28 +17,42 @@ import {
    DrawerNavigator
  } from 'react-navigation';
 import Home from './Home';
-import LogoutButton from './LogoutButton';
-import TestScreen from './TestPage';
+import Buttons from './Buttons';
+import LogoutScreen from './Logout';
 import SpecialItems from './SpecialItems';
 import ThingsToDo from './ThingsToDo';
 import MessagingPortal from './MessagingPortal';
 import PhotoGallery from './Gallery';
 import SettingsPage from './Settings';
+import CalendarList from '../calendar/calendar-list/CalendarList';
+import Calendarload from '../calendar/Calendarload';
 
 //Drawer Nagigator
 
 const RootNavigator = DrawerNavigator({
   Home: {
-    screen: LogoutButton,
+    screen: Buttons,
     navigationOptions: {
       drawerLabel: 'Home',
       stackLabel: 'Home',
     },
   },
-  Test: {
-    screen: TestScreen,
+  CalendarList: {
+    screen: CalendarList,
     navigationOptions: {
-      drawerLabel: 'Test',
+      drawerLabel: 'Calendar',
+    },
+  },
+  Calendarload: {
+    screen: Calendarload,
+      navigationOptions: {
+        drawerLabel: 'Calendar2',
+    },
+  },
+  LogoutScreen: {
+    screen: LogoutScreen,
+    navigationOptions: {
+      drawerLabel: 'Logout',
     },
   },
   Medication: {
@@ -57,12 +71,6 @@ const RootNavigator = DrawerNavigator({
     screen: MessagingPortal,
     navigationOptions: {
       drawerLabel: 'Messaging Portal',
-    },
-  },
-  Photos: {
-    screen: PhotoGallery,
-    navigationOptions: {
-      drawerLabel: 'Photo Gallery'
     },
   },
   Settings: {
