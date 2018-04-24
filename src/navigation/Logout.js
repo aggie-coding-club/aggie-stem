@@ -19,9 +19,9 @@ import StaticBar from './StaticBar';
 
 var {height, width}=Dimensions.get("window");
 
-const TestScreen = () => (
+const LogoutScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.words}>TEST PAGE</Text>
+    <Text style={styles.words}>LOGGED OUT</Text>
     <StaticBar/>
   </View>
 );
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default TestScreen;
+export default LogoutScreen;

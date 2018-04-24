@@ -1,0 +1,230 @@
+{
+    '2017-07-09': [{
+            name: '4:15PM - 5:15PM\nCheck In',
+            height:100
+        },
+        {
+            name: '5:15PM - 5:45PM\nParent Orientation',
+            height:50
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:30PM - 9:30PM\nTeam Meeting / Media Rm @ Callaway',
+            height: 200,
+        }],
+    '2017-07-10': [{
+            name: '8:00AM - 8:30AM\nBreakfast @ Callaway',
+            height: 50,
+        },
+        {
+            name: '9:00AM - 10:30AM\nIntroductions/Campus Tour @ ILSB 1105',
+            height: 150,
+        },
+        {
+            name: '10:40AM - 12:10AM\n SAT PreTest @ ILSB 1105',
+            height: 150,
+        },
+        {
+            name: '12:20PM - 1:20PM\nLunch @ MSC',
+            height: 100,
+        },
+        {
+            name: '1:30PM - 3:00PM\nMicrocontrollers @ EDCT 503',
+            height: 150,
+        },
+        {
+            name: '3:10PM - 3:50PM\nPanel @ HECC 200',
+            height: 67,
+        },
+        {
+            name: '4:00PM - 5:30PM\nSmartCities @ EDCT 215',
+            height: 150,
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:30PM - 9:30PM\nGame Night in Media Room @ Callaway',
+            height: 200,
+        }],
+    '2017-07-11': [{
+            name: '8:00AM - 8:30AM\nBreakfast @ Callaway',
+            height: 50,
+        },
+        {
+            name: '9:00AM - 10:30AM\nSAT @ EDCT 225',
+            height: 150,
+        },
+        {
+            name: '10:40AM - 12:10AM\nPhysics Show MPHY - Hawking Auditorium',
+            height: 150,
+        },
+        {
+            name: '12:20PM - 1:20PM\nLunch @ MSC',
+            height: 100,
+        },
+        {
+            name: '1:30PM - 3:00PM\nMicrocontrollers @ EDCT 503',
+            height: 150,
+        },
+        {
+            name: '3:10PM - 3:50PM\nPanel @ HECC 200',
+            height: 67,
+        },
+        {
+            name: '4:00PM - 5:30PM\nSmartCities @ EDCT 215',
+            height: 150,
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:00PM - 8:30PM\nIn Room',
+            height: 150,
+        },
+        {
+            name: '9:00PM - 11:00PM\nAstronomy Show',
+            height: 200,
+        }],
+    '2017-07-12': [{
+            name: '8:00AM - 8:30AM\nBreakfast @ Callaway',
+            height: 50,
+        },
+        {
+            name: '9:00AM - 10:30AM\nSAT @ EDCT 225',
+            height: 150,
+        },
+        {
+            name: '10:40AM - 12:10AM\nStructures @ HECC 104',
+            height: 150,
+        },
+        {
+            name: '12:20PM - 1:20PM\nLunch @ MSC',
+            height: 100,
+        },
+        {
+            name: '1:30PM - 3:00PM\nMicrocontrollers @ EDCT 503',
+            height: 150,
+        },
+        {
+            name: '3:10PM - 3:50PM\nPanel @ HECC 200',
+            height: 67,
+        },
+        {
+            name: '4:00PM - 5:30PM\nSmartCities @ EDCT 215',
+            height: 150,
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:30PM - 9:30PM\nPool/Volleyball/Basketball @ Callaway',
+            height: 200,
+        }],
+    '2017-07-13': [{
+            name: '8:00AM - 8:30AM\nBreakfast @ Callaway',
+            height: 50,
+        },
+        {
+            name: '9:00AM - 10:30AM\nSAT @ EDCT 225',
+            height: 150,
+        },
+        {
+            name: '10:40AM - 12:10AM\nStructures @ HECC 104',
+            height: 150,
+        },
+        {
+            name: '12:20PM - 1:20PM\nLunch @ MSC',
+            height: 100,
+        },
+        {
+            name: '1:30PM - 3:00PM\nMicrocontrollers @ EDCT 503',
+            height: 150,
+        },
+        {
+            name: '3:10PM - 3:50PM\nPanel @ HECC 200',
+            height: 67,
+        },
+        {
+            name: '4:00PM - 5:30PM\nSmartCities @ EDCT 215',
+            height: 150,
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:30PM - 9:30PM\nPool/Volleyball/Basketball @ Callaway',
+            height: 200,
+        }],
+    '2017-07-14': [{
+            name: '8:00AM - 8:30AM\nBreakfast @ Callaway',
+            height: 50,
+        },
+        {
+            name: '9:00AM - 10:30AM\nSAT @ EDCT 225',
+            height: 150,
+        },
+        {
+            name: '10:40AM - 12:10AM\nStructures @ HECC 104',
+            height: 150,
+        },
+        {
+            name: '12:20PM - 1:20PM\nLunch @ SBISA',
+            height: 100,
+        },
+        {
+            name: '1:30PM - 3:00PM\nMicrocontrollers @ EDCT 503',
+            height: 150,
+        },
+        {
+            name: '3:10PM - 3:50PM\nPanel @ HECC 200',
+            height: 67,
+        },
+        {
+            name: '4:00PM - 5:30PM\nSmartCities @ EDCT 215',
+            height: 150,
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:30PM - 9:30PM\nGrand Station',
+            height: 200,
+        }],     
+    '2017-07-15': [{
+            name: '9:30AM - 10:30AM\nSleep In\nBreakfast @ Callaway',
+            height: 100,
+        },
+        {
+            name: '11:00AM - 12:30PM\n????',
+            height: 150,
+        },
+        {
+            name: '1:00PM - 2:00PM\nCiCi\'s',
+            height: 100,
+        },
+        {
+            name: '2:30PM - 3:00PM\nChange for Jumping World',
+            height: 50,
+        },
+        {
+            name: '3:30PM - 5:30PM\nJumping World',
+            height: 200,
+        },
+        {
+            name: '6:00PM - 7:00PM\nDinner @ Callaway',
+            height: 100,
+        },
+        {
+            name: '7:30PM - 9:30PM\nMovie Night in Media Room @ Callaway',
+            height: 200,
+        }]     
+}

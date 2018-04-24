@@ -21,10 +21,10 @@ import StaticBar from './StaticBar';
 //get dimentions
 var {height, width} = Dimensions.get('window');
 
-const LogoutButton = ({ navigation }) => (
+const Buttons = ({ navigation }) => (
   <View>
     <TouchableHighlight
-      style={styles.button}
+      style={styles.logout}
       onPress={() => {
         //First alert
         Alert.alert(
@@ -46,7 +46,7 @@ const LogoutButton = ({ navigation }) => (
                 'Are you sure you want to logout?',
                 [
                   {text: 'Cancel', onDismiss: () => {}},
-                  {text: 'Yes', onPress: () => navigation.navigate('Test')},
+                  {text: 'Yes', onPress: () => navigation.navigate('LogoutScreen')},
                 ],
                 )
               }},
@@ -55,17 +55,29 @@ const LogoutButton = ({ navigation }) => (
           )},
           {text: 'Cancel', onDismiss: () => {}},
           // Needs the Logout Function inside of here to actually do something on pressing YES
-          {text: 'Yes', onPress: () => navigation.navigate('Test')}
+          {text: 'Yes', onPress: () => navigation.navigate('LogoutScreen')}
         ],
         {cancelable: false }
       )}}>
       <Text style={styles.words}>Logout</Text>
     </TouchableHighlight>
+    <TouchableHighlight
+      style={styles.calendar}
+      onPress={() => navigation.navigate('CalendarList')
+    }>
+      <Text style={styles.words}>Calendar</Text>
+    </TouchableHighlight>
+    <TouchableHighlight
+      style={styles.ThingsToDo}
+      onPress={() => navigation.navigate('ToDo')
+    }>
+      <Text style={styles.words}>College Station Activities</Text>
+    </TouchableHighlight>
   </View>
 );
 // Styles
 const styles = StyleSheet.create({
-  button: {
+  logout: {
     position:'relative',
     height: 50,
     width: 50,
@@ -74,6 +86,35 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#003C71',
+    borderRadius: 10,
+    borderWidth: 0.5,
+    borderColor: '#000000'
+  },
+  calendar: {
+    position: 'absolute',
+    height: 50,
+    width: 70,
+    flexDirection: 'row',
+    alignSelf: 'flex-start',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#003C71',
+    borderRadius: 10,
+    borderWidth: 0.5,
+    borderColor: '#000000'
+  },
+  ThingsToDo: {
+    position:'relative',
+    height: 50,
+    width: 100,
+    flexDirection: 'row',
+    alignSelf: 'flex-start',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#003C71',
+    borderRadius: 10,
+    borderWidth: 0.5,
+    borderColor: '#000000'
   },
   words: {
     textAlign: 'center',
@@ -82,4 +123,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default LogoutButton;
+export default Buttons;
