@@ -29,54 +29,61 @@ import Calendarload from '../calendar/Calendarload';
 
 //Drawer Nagigator
 
-const RootNavigator = DrawerNavigator({
+const RootNavigator = StackNavigator({
   Home: {
     screen: Buttons,
     navigationOptions: {
       drawerLabel: 'Home',
-      stackLabel: 'Home',
+      title: 'Home',
     },
   },
   CalendarList: {
     screen: CalendarList,
     navigationOptions: {
       drawerLabel: 'Calendar',
+      title: 'Calendar',
     },
   },
   Calendarload: {
     screen: Calendarload,
       navigationOptions: {
         drawerLabel: 'Calendar2',
+        title: 'Calendar2',
     },
   },
   LogoutScreen: {
     screen: LogoutScreen,
     navigationOptions: {
       drawerLabel: 'Logout',
+      title: 'Logout',
     },
   },
   Medication: {
     screen: SpecialItems,
     navigationOptions: {
       drawerLabel: 'Medication/ Dietary Restrictions',
+      title: 'Medication',
     },
   },
   ToDo: {
     screen: ThingsToDo,
     navigationOptions: {
       drawerLabel: 'Things to do',
+      title: 'Around College Station'
     },
   },
   Message: {
     screen: MessagingPortal,
     navigationOptions: {
       drawerLabel: 'Messaging Portal',
+      title: 'Messaging',
     },
   },
   Settings: {
     screen: SettingsPage,
     navigationOptions: {
       drawerLabel: 'Settings',
+      title: 'Settings',
     },
   },
 });

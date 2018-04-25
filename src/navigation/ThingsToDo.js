@@ -5,35 +5,57 @@ import {
   Text,
   View,
   Dimensions,
-  ScrollView
+  ScrollView,
+  TouchableHighlight,
+  Alert
 } from 'react-native';
 import {
   StackNavigator,
   TabNavigator,
   DrawerNavigator
 } from 'react-navigation';
+import Hyperlink from 'react-native-hyperlink';
 import StaticBar from './StaticBar';
 import Buttons from './Buttons';
 
 var {height, width}=Dimensions.get("window");
 
-const ThingsToDo = () => (
+const ThingsToDo = ({ navigation }) => (
   <ScrollView>
-    <View style={styles.container}>
-      <StaticBar/>
-      <Buttons/>
+    <StaticBar/>
+    <View style={styles.container1}>
 
       <View style={styles.titleContainer}>
         <Text style={styles.titleWords}>Local Activies</Text>
       </View>
-
-      <View style={styles.wordsContainer}>
-        <Text style={styles.words}>George Bush Library</Text>
-        <Text style={styles.words}>Movies: Cinemark 18 / Premiere Cinemas</Text>
-        <Text style={styles.words}>Bowling: Grand Station</Text>
-        <Text style={styles.words}>Messina Hof</Text>
-        <Text style={styles.words}>First Friday</Text>
-        <Text style={styles.words}>Stark Galleries</Text>
+      <View style={styles.container2}>
+        <View style={styles.wordsContainer}>
+          <Text style={styles.titleWords}>Activity</Text>
+          <Text style={styles.words}>George Bush Library</Text>
+          <Text style={styles.words}>Cinemark 18 / Premiere Cinemas</Text>
+          <Text style={styles.words}>Bowling: Grand Station</Text>
+          <Text style={styles.words}>Messina Hof</Text>
+          <Text style={styles.words}>First Friday</Text>
+          <Text style={styles.words}>Stark Galleries</Text>
+        </View>
+        <View style={styles.wordsContainer}>
+          <Text style={styles.titleWords}>Price</Text>
+          <Text style={styles.words}>$9.00</Text>
+          <Text style={styles.words}>$4.75 - $12.00</Text>
+          <Text style={styles.words}>$25/hour, $3 shoes </Text>
+          <Text style={styles.words}>??</Text>
+          <Text style={styles.words}>Free +</Text>
+          <Text style={styles.words}>Free</Text>
+        </View>
+        <View style={styles.wordsContainer}>
+          <Text style={styles.titleWords}>Links</Text>
+            <Text style={styles.words}>Link</Text>
+            <Text style={styles.words}>Link</Text>
+            <Text style={styles.words}>Link</Text>
+            <Text style={styles.words}>Link</Text>
+            <Text style={styles.words}>Link</Text>
+            <Text style={styles.words}>Link</Text>
+        </View>
       </View>
 
       <View style={styles.titleContainer}>
@@ -108,19 +130,13 @@ const ThingsToDo = () => (
 
 //Styles
 const styles = StyleSheet.create({
-  container: {
+  container1: {
     flex: 1,
     flexDirection: 'column',
   },
-  subTitleContainer: {
-    flex: 1,
-    height: 50,
-    alignItems: 'center',
-    justifyContent:'center',
-    backgroundColor: '#744F28',
-    borderRadius: 10,
-    borderWidth: 0.5,
-    borderColor: '#000000',
+  container2: {
+    flex: 2,
+    flexDirection: 'row',
   },
   titleContainer: {
     height: 65,
@@ -146,14 +162,8 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     color: '#FFFFFF',
   },
-  subTitleWords: {
-    textAlign: 'center',
-    fontSize: 18,
-    fontWeight: 'bold',
-    textDecorationLine: 'underline',
-    color: '#FFFFFF',
-  },
   words: {
+    flexDirection: 'column',
     textAlign: 'center',
     fontSize: 15,
     color: '#FFFFFF',

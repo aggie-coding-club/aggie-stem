@@ -25,6 +25,7 @@ var {height, width} = Dimensions.get('window');
 const Home = () => (
   <View>
     <StaticBar/>
+    <Buttons/>
     <Image
       style={{
         flexDirection: 'row',
