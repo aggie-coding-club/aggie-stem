@@ -63,15 +63,9 @@ const Buttons = ({ navigation }) => (
     </TouchableHighlight>
     <TouchableHighlight
       style={styles.boxes}
-      onPress={() => navigation.navigate('CalendarList')
-    }>
-      <Text style={styles.words}>Calendar</Text>
-    </TouchableHighlight>
-    <TouchableHighlight
-      style={styles.boxes}
       onPress={() => navigation.navigate('Calendarload')
     }>
-      <Text style={styles.words}>Calendar2</Text>
+      <Text style={styles.words}>Calendar</Text>
     </TouchableHighlight>
     <TouchableHighlight
       style={styles.boxes}

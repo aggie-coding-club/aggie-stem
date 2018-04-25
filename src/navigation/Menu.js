@@ -29,7 +29,7 @@ import Calendarload from '../calendar/Calendarload';
 
 //Drawer Nagigator
 
-const RootNavigator = StackNavigator({
+const RootNavigator = DrawerNavigator({
   Home: {
     screen: Buttons,
     navigationOptions: {
@@ -37,18 +37,11 @@ const RootNavigator = StackNavigator({
       title: 'Home',
     },
   },
-  CalendarList: {
-    screen: CalendarList,
-    navigationOptions: {
-      drawerLabel: 'Calendar',
-      title: 'Calendar',
-    },
-  },
   Calendarload: {
     screen: Calendarload,
       navigationOptions: {
-        drawerLabel: 'Calendar2',
-        title: 'Calendar2',
+        drawerLabel: 'Calendar',
+        title: 'Calendar',
     },
   },
   LogoutScreen: {
