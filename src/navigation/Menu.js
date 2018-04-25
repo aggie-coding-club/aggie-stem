@@ -34,49 +34,49 @@ const RootNavigator = DrawerNavigator({
     screen: Buttons,
     navigationOptions: {
       drawerLabel: 'Home',
-      stackLabel: 'Home',
-    },
-  },
-  CalendarList: {
-    screen: CalendarList,
-    navigationOptions: {
-      drawerLabel: 'Calendar',
+      title: 'Home',
     },
   },
   Calendarload: {
     screen: Calendarload,
       navigationOptions: {
-        drawerLabel: 'Calendar2',
+        drawerLabel: 'Calendar',
+        title: 'Calendar',
     },
   },
   LogoutScreen: {
     screen: LogoutScreen,
     navigationOptions: {
       drawerLabel: 'Logout',
+      title: 'Logout',
     },
   },
   Medication: {
     screen: SpecialItems,
     navigationOptions: {
       drawerLabel: 'Medication/ Dietary Restrictions',
+      title: 'Medication',
     },
   },
   ToDo: {
     screen: ThingsToDo,
     navigationOptions: {
       drawerLabel: 'Things to do',
+      title: 'Around College Station'
     },
   },
   Message: {
     screen: MessagingPortal,
     navigationOptions: {
       drawerLabel: 'Messaging Portal',
+      title: 'Messaging',
     },
   },
   Settings: {
     screen: SettingsPage,
     navigationOptions: {
       drawerLabel: 'Settings',
+      title: 'Settings',
     },
   },
 });

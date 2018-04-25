@@ -22,9 +22,9 @@ import StaticBar from './StaticBar';
 var {height, width} = Dimensions.get('window');
 
 const Buttons = ({ navigation }) => (
-  <View>
+  <View style={styles.container}>
     <TouchableHighlight
-      style={styles.logout}
+      style={styles.boxes}
       onPress={() => {
         //First alert
         Alert.alert(
@@ -62,53 +62,40 @@ const Buttons = ({ navigation }) => (
       <Text style={styles.words}>Logout</Text>
     </TouchableHighlight>
     <TouchableHighlight
-      style={styles.calendar}
-      onPress={() => navigation.navigate('CalendarList')
+      style={styles.boxes}
+      onPress={() => navigation.navigate('Calendarload')
     }>
       <Text style={styles.words}>Calendar</Text>
     </TouchableHighlight>
     <TouchableHighlight
-      style={styles.ThingsToDo}
+      style={styles.boxes}
       onPress={() => navigation.navigate('ToDo')
     }>
       <Text style={styles.words}>College Station Activities</Text>
+    </TouchableHighlight>
+    <TouchableHighlight
+      style={styles.boxes}
+      onPress={() => navigation.navigate('Medication')
+    }>
+      <Text style={styles.words}>Medication Portal</Text>
+    </TouchableHighlight>
+    <TouchableHighlight
+      style={styles.boxes}
+      onPress={() => navigation.navigate('Message')
+    }>
+      <Text style={styles.words}>Messaging</Text>
     </TouchableHighlight>
   </View>
 );
 // Styles
 const styles = StyleSheet.create({
-  logout: {
-    position:'relative',
-    height: 50,
-    width: 50,
-    flexDirection: 'row',
-    alignSelf: 'flex-end',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#003C71',
-    borderRadius: 10,
-    borderWidth: 0.5,
-    borderColor: '#000000'
+  container: {
+    flex: 1,
+    flexDirection: 'column',
   },
-  calendar: {
-    position: 'absolute',
+  boxes: {
     height: 50,
-    width: 70,
-    flexDirection: 'row',
-    alignSelf: 'flex-start',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#003C71',
-    borderRadius: 10,
-    borderWidth: 0.5,
-    borderColor: '#000000'
-  },
-  ThingsToDo: {
-    position:'relative',
-    height: 50,
-    width: 100,
-    flexDirection: 'row',
-    alignSelf: 'flex-start',
+    alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#003C71',

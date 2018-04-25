@@ -20,10 +20,7 @@ import RootNavigator from './src/navigation/Menu';
 
 //index class to actually launch to app
 const MyApp = StackNavigator({
-  Tabs: { screen: RootNavigator }
-}, {
-  headerMode: 'Tabs'
-}
+  Tabs: { screen: RootNavigator }},
 );
 
 AppRegistry.registerComponent('StemProject', () => MyApp);
