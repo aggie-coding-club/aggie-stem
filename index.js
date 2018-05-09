@@ -1,6 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
-import Calendar from './Calendar';
+import App from './src/App';
 
 AppRegistry.registerComponent('StemProject', () => App);
-AppRegistry.registerComponent('StemProject', () => Calendar);
