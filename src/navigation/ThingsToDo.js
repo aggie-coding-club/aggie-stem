@@ -31,30 +31,25 @@ const ThingsToDo = ({ navigation }) => (
       <View style={styles.container2}>
         <View style={styles.wordsContainer}>
           <Text style={styles.titleWords}>Activity</Text>
+          <Text style={styles.words}> </Text>
           <Text style={styles.words}>George Bush Library</Text>
           <Text style={styles.words}>Cinemark 18 / Premiere Cinemas</Text>
           <Text style={styles.words}>Bowling: Grand Station</Text>
           <Text style={styles.words}>Messina Hof</Text>
           <Text style={styles.words}>First Friday</Text>
           <Text style={styles.words}>Stark Galleries</Text>
+          <Text style={styles.words}> </Text>
         </View>
         <View style={styles.wordsContainer}>
           <Text style={styles.titleWords}>Price</Text>
+          <Text style={styles.words}> </Text>
           <Text style={styles.words}>$9.00</Text>
           <Text style={styles.words}>$4.75 - $12.00</Text>
-          <Text style={styles.words}>$25/hour, $3 shoes </Text>
+          <Text style={styles.words}>       $25/hour, $3 shoes        </Text>
           <Text style={styles.words}>??</Text>
           <Text style={styles.words}>Free +</Text>
           <Text style={styles.words}>Free</Text>
-        </View>
-        <View style={styles.wordsContainer}>
-          <Text style={styles.titleWords}>Links</Text>
-            <Text style={styles.words}>Link</Text>
-            <Text style={styles.words}>Link</Text>
-            <Text style={styles.words}>Link</Text>
-            <Text style={styles.words}>Link</Text>
-            <Text style={styles.words}>Link</Text>
-            <Text style={styles.words}>Link</Text>
+          <Text style={styles.words}> </Text>
         </View>
       </View>
 
@@ -63,6 +58,7 @@ const ThingsToDo = ({ navigation }) => (
       </View>
 
       <View style={styles.wordsContainer}>
+        <Text style={styles.words}> </Text>
         <Text style={styles.words}>Mad Taco</Text>
         <Text style={styles.words}>Torchys Taco</Text>
         <Text style={styles.words}>Fuego</Text>
@@ -80,6 +76,7 @@ const ThingsToDo = ({ navigation }) => (
         <Text style={styles.words}>Canes</Text>
         <Text style={styles.words}>Chicken Oil Co.</Text>
         <Text style={styles.words}>Freddies</Text>
+        <Text style={styles.words}> </Text>
       </View>
 
       <View style={styles.titleContainer}>
@@ -87,6 +84,7 @@ const ThingsToDo = ({ navigation }) => (
       </View>
 
       <View style={styles.wordsContainer}>
+      <Text style={styles.words}> </Text>
         <Text style={styles.words}>Dixie Chicken</Text>
         <Text style={styles.words}>Cheddars</Text>
         <Text style={styles.words}>Fish Daddys</Text>
@@ -100,6 +98,7 @@ const ThingsToDo = ({ navigation }) => (
         <Text style={styles.words}>Napa Flats</Text>
         <Text style={styles.words}>Buffalo Wild Wings</Text>
         <Text style={styles.words}>Aji Sushi</Text>
+        <Text style={styles.words}> </Text>
       </View>
 
       <View style={styles.titleContainer}>
@@ -107,10 +106,12 @@ const ThingsToDo = ({ navigation }) => (
       </View>
 
       <View style={styles.wordsContainer}>
+      <Text style={styles.words}> </Text>
         <Text style={styles.words}>Sweet Eugenes House of Java</Text>
         <Text style={styles.words}>Minuti Coffee</Text>
         <Text style={styles.words}>Lupas Coffee</Text>
         <Text style={styles.words}>Starbucks</Text>
+        <Text style={styles.words}> </Text>
       </View>
 
       <View style={styles.titleContainer}>
@@ -118,11 +119,13 @@ const ThingsToDo = ({ navigation }) => (
       </View>
 
       <View style={styles.wordsContainer}>
+        <Text style={styles.words}> </Text>
         <Text style={styles.words}>Cold Stone Creameries</Text>
         <Text style={styles.words}>Marble Slab</Text>
         <Text style={styles.words}>Farmhouse Creameries</Text>
         <Text style={styles.words}>Spoons</Text>
         <Text style={styles.words}>Yogurtland</Text>
+        <Text style={styles.words}> </Text>
       </View>
     </View>
   </ScrollView>
@@ -137,22 +140,19 @@ const styles = StyleSheet.create({
   container2: {
     flex: 2,
     flexDirection: 'row',
+    justifyContent: 'center',
   },
   titleContainer: {
     height: 65,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#003C71',
-    borderRadius: 10,
-    borderWidth: 0.5,
     borderColor: '#000000',
   },
   wordsContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#500000',
-    borderRadius: 10,
-    borderWidth: 0.5,
     borderColor: '#000000',
   },
   titleWords: {

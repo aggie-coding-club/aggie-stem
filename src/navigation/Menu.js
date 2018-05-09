@@ -23,7 +23,6 @@ import SpecialItems from './SpecialItems';
 import ThingsToDo from './ThingsToDo';
 import MessagingPortal from './MessagingPortal';
 import PhotoGallery from './Gallery';
-import SettingsPage from './Settings';
 import CalendarList from '../calendar/calendar-list/CalendarList';
 import Calendarload from '../calendar/Calendarload';
 
@@ -70,13 +69,6 @@ const RootNavigator = DrawerNavigator({
     navigationOptions: {
       drawerLabel: 'Messaging Portal',
       title: 'Messaging',
-    },
-  },
-  Settings: {
-    screen: SettingsPage,
-    navigationOptions: {
-      drawerLabel: 'Settings',
-      title: 'Settings',
     },
   },
 });
